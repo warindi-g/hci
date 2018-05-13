@@ -1,0 +1,154 @@
+<DOCTYPE HTML>
+	<!DOCTYPE html>
+	<html>
+	<head>
+
+<link rel="stylesheet" type="text/css" href="artists.css" media="screen">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Banana Hill Art Gallery</title>
+	<header>
+  <h1 style="font-size: 50px; text-align: center; font-family: sans-serif; color: #ff9900;" class="logo" > Banana Hill Art Gallery</h1>
+  <h2 style="text-align: center; color: #800000;"><i>Contemporary African Art Gallery in Nairobi, Kenya</i></h2>
+  </header>
+	
+
+
+	</head>
+	<body bgcolor="#ffd9b3">
+		<nav>
+  <div class="topnav" data-spy="affix" data-offset-top="197" >
+  
+  <ul style="float:left">
+    <li><a class="active" href="bananahill.html" style="color:#e6b800; background:#b32d00; font-weight: bold">Home</a></li>  
+    <li><a href="artists.html">Our Artists</a></li>
+    <!-- <li><a href="#events">Events</a></li> -->
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="about.html">About us</a></li>
+  </ul> 
+  
+  <ul style="float:right">
+    <li><a href="login.html" class="login" style="background: #4CAF50">Login</a></li>
+
+  
+
+  </ul>
+
+  </div>
+ </nav>
+ <br>
+
+
+
+
+<h2 style="text-align: center; color:#e6b800; background:#333; font-family: Arial ;margin-left:150px margin-right: 150px">Art Exhibition Reservation </h2>
+
+
+<form method="post" action="//submit.form" onSubmit="return validateForm();">
+<div style="width: 400px;">
+</div>
+<div style="display: flex; padding-bottom: 18px;width : 450px;">
+<div style=" margin-left : 0; margin-right : 1%; width : 49%;">First name<span style="color: red;"> *</span><br/>
+<input type="text" id="data_2" name="data_2" style="width: 100%;" class="form-control"/>
+</div>
+<div style=" margin-left : 1%; margin-right : 0; width : 49%;">Last name<span style="color: red;"> *</span><br/>
+<input type="text" id="data_3" name="data_3" style="width: 100%;" class="form-control"/>
+</div>
+</div><div style="padding-bottom: 18px;">Phone<span style="color: red;"> *</span><br/>
+<input type="text" id="data_4" name="data_4" style="width : 450px;" class="form-control"/>
+</div>
+<div style="padding-bottom: 18px;">Email<span style="color: red;"> *</span><br/>
+<input type="text" id="data_5" name="data_5" style="width : 450px;" class="form-control"/>
+</div>
+<div style="padding-bottom: 18px;">Pick the Artist<span style="color: red;"> *</span><br/>
+<select id="data_11" name="data_11" style="width : 450px;" class="form-control"><option>Arlene Wandera</option>
+<option>Alex Wainaina</option>
+<option>Gor Souda</option>
+</select>
+</div>
+<div style="padding-bottom: 18px;">Date of Visit<span style="color: red;"> *</span><br/>
+<input type="text" id="data_6" name="data_6" style="width : 250px;" class="form-control"/>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.min.js" type="text/javascript"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">new Pikaday({ field: document.getElementById('data_6') });</script>
+<div style="padding-bottom: 18px;">Number of Tickets<span style="color: red;"> *</span><br/>
+<input type="number" id="data_9" name="data_9" style="width : 250px;" class="form-control"/>
+</div>
+<div style="padding-bottom: 18px;">
+	<a href="submit.html"><input name="skip_Submit" value="Submit" type="submit"/></a>
+</div>
+<div>
+
+</form>
+
+<script type="text/javascript">
+function validateForm() {
+if (isEmpty(document.getElementById('data_2').value.trim())) {
+alert('First name is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_3').value.trim())) {
+alert('Last name is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_4').value.trim())) {
+alert('Phone is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_5').value.trim())) {
+alert('Email is required!');
+return false;
+}
+if (!validateEmail(document.getElementById('data_5').value.trim())) {
+alert('Email must be a valid email address!');
+return false;
+}
+if (isEmpty(document.getElementById('data_6').value.trim())) {
+alert('Date of Visit is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_9').value.trim())) {
+alert('Number of Tickets is required!');
+return false;
+}
+return true;
+}
+function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+function validateEmail(email) {
+var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+return isEmpty(email) || re.test(email);
+}
+</script>
+
+
+
+<a href="https://www.facebook.com/BananaHillArtGalleryInNairobi/" class="fa fa-facebook"></a>
+<a href="https://twitter.com/BananaHillArt" class="fa fa-twitter"></a>
+<a href="https://plus.google.com/108819026650804640672" class="fa fa-google"></a>
+
+ <br>
+  <section3>
+    <div class="wraper3">
+   <h3>Contact us</h3>
+   <p>Email: info@bananahillartgallery.com</p>
+   <p>Phone: +254 711756911, +254 733882660, +254700807362</p>
+   <p>Address: 14312 00100 Nairobi</p>
+   <p4><pre style="font-family: " Times New Roman";"><b>OUR OPENING HOURS:</b>
+
+       Monday - Saturday  10:00 - 18:00
+       Sunday  12:00 - 18:00
+     </pre></p4>
+
+    </div>
+  </section3>
+
+
+
+
+
+	</body>
+	</html>
+
+
