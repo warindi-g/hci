@@ -1,7 +1,7 @@
 
 
 ul {
-    
+
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -16,9 +16,13 @@ li {
   display: inline;
 }
 
+.module-group {
+    display: inline-table;
+}
+
 li a {
-    
-        
+
+
     display: inline;
     color: white;
     text-align: center;
@@ -36,14 +40,14 @@ li a:hover {
 }
 
 .topnav {
-    
+
     margin-bottom: 5px;
     z-index:105;
     margin-left:none;
     margin-right: none;
-    
+
     font-size: 18px;
-    
+
 }
 
 /* Navbar container */
@@ -71,7 +75,7 @@ li a:hover {
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 16px; 
+  font-size: 16px;
   border: none;
   outline: none;
   color: white;
@@ -134,7 +138,7 @@ li a:hover {
 }
 .red{
   background:url(banana2.jpg);
-  
+
 }
 .green{
   background:url(banana3.jpg);
@@ -216,7 +220,3 @@ background-size: contain;
   height: 380px;
 
 }
-
-
-
-
